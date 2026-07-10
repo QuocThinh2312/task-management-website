@@ -21,7 +21,65 @@
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
 
         <!-- Style -->
-        <link rel="stylesheet" href="./asset/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <input type="checkbox" id="menu-checkbox" class="header__input-checkbox" hidden />
+
+                    <a href="#">
+                        <img src="./assets/images/logo.svg" alt="Task." class="logo header__logo" />
+                    </a>
+
+                    <div class="header__actions">
+                        <a class="btn btn--signin">Sign In</a>
+
+                        <label for="menu-checkbox" class="header__open-menu" aria-label="Open navigantion menu">
+                            <img src="./assets/icons/toggle-menu.svg" alt="" />
+                        </label>
+                    </div>
+
+                    <label for="menu-checkbox" class="header__menu-overlay"></label>
+
+                    <nav class="nav">
+                        <div class="nav__header">
+                            <a href="#">
+                                <img src="./assets/images/logo.svg" alt="Task." class="logo" />
+                            </a>
+                            <label for="menu-checkbox" class="nav__close-menu">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </label>
+                        </div>
+
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#products">Products</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#guidelines">Guidelines</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#reviews">Reviews</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
