@@ -3,6 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Boost team productivity with an all-in-one task management platform. Organize projects, collaborate seamlessly, track progress, and manage work more efficiently."
+        />
+
         <title>Task Management Website</title>
 
         <!-- Favicon -->
@@ -12,13 +17,13 @@
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
-        <!-- Reset CSS -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
 
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
@@ -27,29 +32,30 @@
         <!-- Header -->
         <header class="header">
             <div class="container">
-                <div class="header__inner">
+                <div class="flex-between">
                     <input type="checkbox" id="menu-checkbox" class="header__input-checkbox" hidden />
 
-                    <a href="#">
-                        <img src="./assets/images/logo.svg" alt="Task." class="logo header__logo" />
+                    <a href="./">
+                        <img src="./assets/images/logo.svg" alt="Task." width="87" height="19" class="logo header__logo" />
                     </a>
 
-                    <div class="header__actions">
-                        <a class="btn btn--signin">Sign In</a>
+                    <div class="items-center header__actions">
+                        <a href="#!" class="btn flex-center btn--signin">Sign In</a>
 
-                        <label for="menu-checkbox" class="header__open-menu" aria-label="Open navigantion menu">
-                            <img src="./assets/icons/toggle-menu.svg" alt="" />
+                        <label for="menu-checkbox" class="header__open-menu" aria-label="Open navigation menu">
+                            <img src="./assets/icons/toggle-menu.svg" width="24" height="16" alt="" />
                         </label>
                     </div>
 
                     <label for="menu-checkbox" class="header__menu-overlay"></label>
 
-                    <nav class="nav">
-                        <div class="nav__header">
-                            <a href="#">
-                                <img src="./assets/images/logo.svg" alt="Task." class="logo" />
+                    <nav class="nav" aria-label="Main navigation">
+                        <div class="flex-between nav__header">
+                            <a href="./">
+                                <img src="./assets/images/logo.svg" alt="Task." width="87" height="19" class="logo" />
                             </a>
-                            <label for="menu-checkbox" class="nav__close-menu">
+
+                            <label for="menu-checkbox" class="flex-center">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -64,22 +70,24 @@
                         </div>
 
                         <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#">Home</a>
+                            <li>
+                                <a href="#" class="nav__link">Home</a>
                             </li>
-                            <li class="nav__item">
-                                <a href="#products">Products</a>
+                            <li>
+                                <a href="#products" class="nav__link">Products</a>
                             </li>
-                            <li class="nav__item">
-                                <a href="#guidelines">Guidelines</a>
+                            <li>
+                                <a href="#guidelines" class="nav__link">Guidelines</a>
                             </li>
-                            <li class="nav__item">
-                                <a href="#reviews">Reviews</a>
+                            <li>
+                                <a href="#reviews" class="nav__link">Reviews</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
+
+        <!-- Hero -->
     </body>
 </html>
